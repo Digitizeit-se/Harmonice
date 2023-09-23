@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmonize", "Harmonize.csproj", "{B3591BD7-A5F1-4062-A1A5-826DAADD4827}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Channels", "Channels", "{3AF64972-1FF3-4B63-9915-1788C307D5CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{ABB9692D-BDE0-46F5-A92D-3BD83D2E94B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1BEAF1E9-8D56-4554-ABF1-7BF888E9A221}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{0D979CDD-4CCE-4B39-BABB-E762592D6AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi", "..\DemoApi\DemoApi.csproj", "{ED5A0B32-C66A-434C-B2E5-6063A0C02F89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3591BD7-A5F1-4062-A1A5-826DAADD4827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3591BD7-A5F1-4062-A1A5-826DAADD4827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3591BD7-A5F1-4062-A1A5-826DAADD4827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3591BD7-A5F1-4062-A1A5-826DAADD4827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5A0B32-C66A-434C-B2E5-6063A0C02F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5A0B32-C66A-434C-B2E5-6063A0C02F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5A0B32-C66A-434C-B2E5-6063A0C02F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5A0B32-C66A-434C-B2E5-6063A0C02F89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED5A0B32-C66A-434C-B2E5-6063A0C02F89} = {0D979CDD-4CCE-4B39-BABB-E762592D6AAF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5771569-CDC7-4660-A197-315D26844B04}
+	EndGlobalSection
+EndGlobal
