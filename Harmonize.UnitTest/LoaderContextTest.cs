@@ -9,7 +9,7 @@ public class LoaderContextTest
     public void Given_LoaderContext_Load_Returns_Assembly()
     {
         // Arrange
-        string pluginPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "dlls\\Serilog.Extensions.Logging.dll");
+        string pluginPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!, "dlls\\Serilog.Extensions.Logging.dll");
         
         var context = new TestLoadContext(pluginPath);
 
