@@ -13,14 +13,13 @@ public class JobItemTests
 
         //Act
         var jobItem = new JobItem(testJob, "Test", creatorId);
-        var job = jobItem.GetJob<TestJob>();
-
+       
         //Assert
         jobItem.JobType.Should().Be("TestJob");
-        jobItem.Job.Should().Be("{\"Name\":\"Test\",\"Age\":1}");
+        jobItem.GetJob().Should().Be("{\"Name\":\"Test\",\"Age\":1}");
         jobItem.CreatorName.Should().Be("Test");
         jobItem.CreatorId.Should().Be(creatorId);
-        job.Should().BeEquivalentTo(testJob);
+        jobItem.GetJob<TestJob>().Should().BeEquivalentTo(testJob);
     }
 
     [Fact]
@@ -32,14 +31,13 @@ public class JobItemTests
 
         //Act
         var jobItem = new JobItem(testJob, "Test", creatorId);
-        var job = jobItem.GetJob<string>();
-
+        
         //Assert
         jobItem.JobType.Should().Be("String");
-        jobItem.Job.Should().Be(testJob);
+        jobItem.GetJob().Should().Be(testJob);
         jobItem.CreatorName.Should().Be("Test");
         jobItem.CreatorId.Should().Be(creatorId);
-        job.Should().BeEquivalentTo(testJob);
+        
     }
 }
 

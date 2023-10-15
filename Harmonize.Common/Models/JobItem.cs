@@ -16,7 +16,7 @@ public readonly struct JobItem
     /// <summary>
     /// Job object as string, if jobType is object this is json string
     /// </summary>
-    public string Job { get; }
+    private string Job { get; }
 
     /// <summary>
     /// Object type of the job stored in Job
@@ -48,4 +48,10 @@ public readonly struct JobItem
     {
         return JobType == "String" ? (T)Convert.ChangeType(Job, typeof(T)) : JsonConvert.DeserializeObject<T>(Job);
     }
+
+    public string GetJob()
+    {
+        return Job;
+    }
+
 }
