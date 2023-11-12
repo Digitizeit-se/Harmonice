@@ -106,9 +106,5 @@ public interface IChannel<T> : IDisposable
     /// </summary>
     Task Completion();
 
-    /// <summary>
-    /// Dispose the channel and used resources.
-    /// </summary>
-    void Dispose();
 }
 
