@@ -1,4 +1,6 @@
-﻿namespace Harmonize.Channel;
+﻿using System.Runtime.CompilerServices;
+
+namespace Harmonize.Channel;
 
 public interface IChannel<T> : IDisposable
 {
@@ -53,18 +55,18 @@ public interface IChannel<T> : IDisposable
     bool TryWrite(T item);
 
     /// <summary>Creates an <see cref="IAsyncEnumerable{T}"/> that enables reading all of the data from the channel.</summary>
-    /// <param name="token">The <see cref="CancellationToken"/> used to cancel the enumeration.</param>
+    /// <param name="token">Optional <see cref="CancellationToken"/> used to cancel the enumeration.</param>
     /// <remarks>
     /// Each <see cref="IAsyncEnumerator{T}.MoveNextAsync"/> call that returns <c>true</c> will read the next item out of the channel.
     /// <see cref="IAsyncEnumerator{T}.MoveNextAsync"/> will return false once no more data is or will ever be available to read.
     /// </remarks>
     /// <returns>The created async enumerable.</returns>
-    IAsyncEnumerable<(T? item, ulong ackNum)> ReadAllAsync(CancellationToken token);
+    IAsyncEnumerable<(T? item, ulong ackNum)> ReadAllAsync(CancellationToken token = default);
 
     /// <summary>Asynchronously reads an item from the channel.</summary>
     /// <param name="token">A <see cref="CancellationToken"/> used to cancel the read operation.</param>
     /// <returns>A <see cref="ValueTask{TResult}"/> that represents the asynchronous read operation.</returns>
-    ValueTask<(T? item, ulong ackNum)> ReadAsync(CancellationToken token);
+    ValueTask<(T? item, ulong ackNum)> ReadAsync(CancellationToken token = default);
 
     /// <summary>Asynchronously writes an item to the channel.</summary>
     /// <param name="item">The value to write to the channel.</param>
@@ -103,5 +105,6 @@ public interface IChannel<T> : IDisposable
     /// be available to be read from this channel.
     /// </summary>
     Task Completion();
+
 }
 
