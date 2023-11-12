@@ -23,12 +23,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harmonize.CommonTest", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harmonize.Channel", "..\Harmonize.IChannel\Harmonize.Channel.csproj", "{A4AC6ECB-9BE0-4BE5-979E-DD86F98746F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmonize.UnboundMemoryChannel", "..\Harmonize.UnboundMemoryChannel\Harmonize.UnboundMemoryChannel.csproj", "{0058F007-212B-4F69-A611-F4BAEC9B476A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harmonize.UnboundMemoryChannel", "..\Harmonize.UnboundMemoryChannel\Harmonize.UnboundMemoryChannel.csproj", "{0058F007-212B-4F69-A611-F4BAEC9B476A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0418EE20-412B-4A90-87CC-7E038259E75F}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmonize.BoundMemoryChannel", "..\Harmonize.BoundMemoryChannel\Harmonize.BoundMemoryChannel.csproj", "{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{0058F007-212B-4F69-A611-F4BAEC9B476A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0058F007-212B-4F69-A611-F4BAEC9B476A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0058F007-212B-4F69-A611-F4BAEC9B476A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{58503127-A9BB-40D9-907B-88E6D6A8D645} = {1BEAF1E9-8D56-4554-ABF1-7BF888E9A221}
 		{5DCF32FE-533F-4E39-9735-BE39244D475C} = {1BEAF1E9-8D56-4554-ABF1-7BF888E9A221}
 		{0058F007-212B-4F69-A611-F4BAEC9B476A} = {3AF64972-1FF3-4B63-9915-1788C307D5CA}
+		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72} = {3AF64972-1FF3-4B63-9915-1788C307D5CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5771569-CDC7-4660-A197-315D26844B04}
