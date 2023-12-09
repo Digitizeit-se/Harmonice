@@ -18,3 +18,4 @@ Contents
 .. toctree::
 
    introduction
+   configuration

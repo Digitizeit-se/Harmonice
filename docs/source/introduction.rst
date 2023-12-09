@@ -1,7 +1,6 @@
 Introduction
 =====
 
-.. _installation:
 
 About
 ------------
