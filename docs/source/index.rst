@@ -1,13 +1,12 @@
-Welcome to Lumache's documentation!
+Welcome to Harmonize documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Harmonize** 
+Harmonize is a integration service based on plug-ins developed in C# to do the work.
+One "integration" is a worker manager with one to meny workers that do work and pass work on to the next worker.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+
+Check out the :doc:`introduction` section for further information.
 
 .. note::
 
@@ -18,4 +17,4 @@ Contents
 
 .. toctree::
 
-   usage
+   introduction
