@@ -44,6 +44,7 @@ Some ware in the application WorkerHandlersService needs to get instantiated to 
 To Auto start service when added to serviceCollection instead of above AddSingleton use the service collection extension AddHarmonizeService();.
 
 .. code-block:: csharp
+   
       services.AddHarmonizeService();
 
 
