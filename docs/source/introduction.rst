@@ -45,14 +45,14 @@ To Auto start service when added to serviceCollection instead of above AddSingle
 
 .. code-block:: csharp
 
-services.AddHarmonizeService();
+   services.AddHarmonizeService();
 
 .. note::
-Edit this
+   Edit this
 
-insert link to harmonize configuration docs
+   insert link to harmonize configuration docs
 
-Add a harmonize.config.json file to application root folder.
-Add plugin dll files needed by worker configured in harmonize.config.json in folder root/workerActionsPlugin/MyPlugin/MyPlugin.dll
+   Add a harmonize.config.json file to application root folder.
+   Add plugin dll files needed by worker configured in harmonize.config.json in folder root/workerActionsPlugin/MyPlugin/MyPlugin.dll
 
-done!
+   done!
