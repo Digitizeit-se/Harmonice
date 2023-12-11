@@ -3,14 +3,17 @@ Channels
 
 The channel "plug-in" is what is used by the worker manger to pass work from one worker to the next.
 
-Types built in by default
+Channels built in by default
 ------------
 
 .. toctree::
 
-   introduction
-   configuration
-   channels
+   azureservicebuschannel
+   diskchannel
+   inmemorybound
+   inmemoryunbound
+   rabbitmqchannel
+
 
 Configuration
 ------------
