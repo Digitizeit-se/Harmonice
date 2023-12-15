@@ -30,7 +30,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmonize.BoundMemoryChannel", "..\Harmonize.BoundMemoryChannel\Harmonize.BoundMemoryChannel.csproj", "{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harmonize.BoundMemoryChannel", "..\Harmonize.BoundMemoryChannel\Harmonize.BoundMemoryChannel.csproj", "{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Worker", "Worker", "{9A12D048-D4D2-48F1-8490-9C54FB1966D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmonize.Worker", "..\Harmonize.Worker\Harmonize.Worker.csproj", "{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +74,10 @@ Global
 		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{5DCF32FE-533F-4E39-9735-BE39244D475C} = {1BEAF1E9-8D56-4554-ABF1-7BF888E9A221}
 		{0058F007-212B-4F69-A611-F4BAEC9B476A} = {3AF64972-1FF3-4B63-9915-1788C307D5CA}
 		{F6A69B44-8A7E-43DE-B660-5B0BBB42AA72} = {3AF64972-1FF3-4B63-9915-1788C307D5CA}
+		{2C662815-29BE-4F26-A8A9-4EB4CC63C6E6} = {9A12D048-D4D2-48F1-8490-9C54FB1966D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5771569-CDC7-4660-A197-315D26844B04}
